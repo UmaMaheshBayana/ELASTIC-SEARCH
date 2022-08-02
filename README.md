@@ -46,12 +46,7 @@ Finally, here is the command to download the required packages to set up Elastic
 ```
 sudo apt install elasticsearch
 ````
-
-***Command to install Elasticsearch on Ubuntu 20.04 LTS***
-
-***
-Enable and Start Elasticsearch Service Once the installation is completed, let’s enable its service to start it automatically with system boot.
-***
+***Enable and Start Elasticsearch Service Once the installation is completed, let’s enable its service to start it automatically with system boot.***
 
 ```
 sudo systemctl daemon-reload
@@ -61,19 +56,19 @@ sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch
 ````
 
-***Start***
+***Command to Start Elasticsearch***
 
 ```
 sudo systemctl start elasticsearch
 ````
 
-***Check Status*** 
+***Command to Check Status*** 
 
 ```
 sudo systemctl status elasticsearch
 ````
 
-Note– In the future to stop the same service you can use this:
+***Note– In the future to stop the same service you can use this:***
 
 ```
 sudo systemctl stop elasticsearch
@@ -97,13 +92,20 @@ curl -X GET "localhost:9200/"
 
  
 
-Uninstall (optional)
+***Uninstall (optional)***
+
 In the future, if you want to remove ElasticSearch from your Ubuntu Linux then use the below command to do that:
 
-Copy Me
+```
 sudo apt-get --purge autoremove elasticsearch
+````
+
 To completely remove it from the system also delete its directory if there is any using the below command:
 
-Copy Me
+```
 sudo rm -rf /var/lib/elasticsearch/
+````
+
+```
 sudo rm -rf /etc/elasticsearch
+````
