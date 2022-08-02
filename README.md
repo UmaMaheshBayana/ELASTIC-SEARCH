@@ -46,6 +46,14 @@ Finally, here is the command to download the required packages to set up Elastic
 ```
 sudo apt install elasticsearch
 ````
+***Configure Elasticsearch***
+```
+sudo nano /etc/elasticsearch/elasticsearch.yml
+````
+Here in this configuration file uncomment the lines mentioned   
+
+
+
 ***Enable and Start Elasticsearch Service Once the installation is completed, let’s enable its service to start it automatically with system boot.***
 
 ```
