@@ -52,7 +52,13 @@ sudo nano /etc/elasticsearch/elasticsearch.yml
 ````
 Here in this configuration file uncomment the lines mentioned   
 
+```cluster.name: my-application```
 
+```cluster.initial_master_nodes: ["node-1", "node-2"]```
+
+And Change IP addres for network Host
+
+```network.host: 0.0.0.0```
 
 ***Enable and Start Elasticsearch Service Once the installation is completed, let’s enable its service to start it automatically with system boot.***
 
@@ -95,10 +101,6 @@ Now test the Elasticsearch by sending an HTTP request with port number 9200
 ```
 curl -X GET "localhost:9200/"
 ```
-
-
-
- 
 
 ***Uninstall (optional)***
 
