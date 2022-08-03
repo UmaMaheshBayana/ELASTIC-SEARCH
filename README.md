@@ -119,3 +119,5 @@ sudo rm -rf /var/lib/elasticsearch/
 ```
 sudo rm -rf /etc/elasticsearch
 ````
+
+
